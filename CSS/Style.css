@@ -16,9 +16,21 @@ a {
 
 body {
   font-family: Poppins, sans-serif;
+  background: rgba(215, 245, 255, 0.342);
+}
+
+#header h1 {
+  text-align: center;
+}
+
+.nf {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #footer {
   background-color: red;
   color: white;
+  margin-top: 85vh;
 }/*# sourceMappingURL=Style.css.map */

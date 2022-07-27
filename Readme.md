@@ -3,7 +3,7 @@ This website is created by "Kanish Kumar" and "Arshdeep Singh" of School Bhartiy
 Details of Participant 1:
 Name: Kanish Kumar
 Phone No.: 7508670783
-Email: kanishkumar@gmail.com
+Email: kanishkumar@my.com
 
 Details of Participant 2:
 Name: Arshdeep Singh
