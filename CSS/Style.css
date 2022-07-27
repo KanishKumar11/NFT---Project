@@ -88,4 +88,9 @@ body {
 .front .fright video {
   height: 500px;
   margin-top: -100px;
+}
+
+.type {
+  font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
+  color: orange;
 }/*# sourceMappingURL=Style.css.map */
