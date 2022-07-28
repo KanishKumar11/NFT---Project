@@ -95,6 +95,11 @@ body{
     height: 100vh;
     width: 100vw;
     background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #ffffff;
 }
 .roadmap{
     height: 100vh;
@@ -102,6 +107,14 @@ body{
 }
 .nft-icon{
     height: 200px;
+}
+.Aleft{
+    float: left;
+    width: 40%;
+}
+.Aright{
+    float: right;
+    width: 40%;
 }
 // ---
 
