@@ -112,6 +112,14 @@ body {
   position: relative;
   color: #ffffff;
 }
+.about .Aleft {
+  float: left;
+  width: 40%;
+}
+.about .Aright {
+  float: right;
+  width: 40%;
+}
 
 .roadmap {
   height: 100vh;
@@ -120,16 +128,6 @@ body {
 
 .nft-icon {
   height: 200px;
-}
-
-.Aleft {
-  float: left;
-  width: 40%;
-}
-
-.Aright {
-  float: right;
-  width: 40%;
 }
 
 .trendSection {
