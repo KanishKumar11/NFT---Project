@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Poppins&display=swap');
 @font-face {
     font-family: Poppins;
     src: url(../Assets/Fonts/Poppins/Poppins-Regular.ttf);
@@ -62,7 +62,7 @@ body{
     color: white;
 }
 .front{
-    height: 90vh;
+    height: 80vh;
     margin: 7rem 15rem;
     padding: 5px;
     .fleft{
@@ -70,6 +70,12 @@ body{
         float: left;
         font-size: 3.2rem;
         margin-top: 7rem;
+        p{
+            font-size: 20px;
+        }
+        .btn{
+            padding:10px 30px;
+        }
     }
     .fright{
         width: 40%;
@@ -81,6 +87,86 @@ body{
     }    
 }
 .type{
-    font-family: Tahoma,'Segoe UI', Geneva, Verdana, sans-serif;
+    font-family: 'Leckerli One', cursive;
     color: orange;
+    font-weight: 700;
+}
+.about{
+    height: 100vh;
+    width: 100vw;
+    background-color: #202020;
+}
+.roadmap{
+    height: 100vh;
+    width: 100vw;
+}
+.nft-icon{
+    height: 200px;
+}
+// ---
+
+.trendSection{
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    overflow-x:auto;
+
+
+}
+.trendSection::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 2px;
+
+}
+.trendSection::-webkit-scrollbar-thumb{
+    background-color: #6eb1b1;
+}
+.trendSection::-webkit-scrollbar-track{
+    background-color:rgb(198 231 231);
+}
+
+
+.nftCard{
+    min-width: 325px;
+    background-color: #ffffff;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 17px;
+    position: relative;
+    height: 300px;
+}
+.card1{
+    margin-left: 15px;
+}
+.buyButton{
+    margin: auto;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    width: 100%;
+    justify-content: center;
+    height: 39px;   
+}
+.buyBtn{
+    width: 100%;
+    height: 100%;
+    border-radius:0px 0px 17px 17px ;
+    background-color:rgb(204, 165, 241);
+    font-weight: bold;
+    font-size: 16px;
+}
+.nftName {
+    font-size: 24px;
+    font-weight: bolder;
+}
+.price{
+    font-size: 22px;
+    font-weight: bold;
 }
