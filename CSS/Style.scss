@@ -123,6 +123,15 @@ body{
 .roadmap{
     height: 100vh;
     width: 100vw;
+    p{
+        font-size: 60px;
+        color: black;
+        font-weight: 600;
+        text-align: center;
+        display:block;
+        margin-top:200px;
+        margin-bottom:-60rem;
+    }
 }
 .nft-icon{
     height: 200px;
@@ -202,7 +211,7 @@ body{
 // ----- Sliding Animation
 .slide-container {
     width: 100%;
-    height:85vh;
+    // height:85vh;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -211,7 +220,7 @@ body{
 
 .image-slider{
     width: 100%;
-    height: 600px;
+    // height: 600px;
     position: absolute;
     left: 0;
     display: flex;
