@@ -204,11 +204,13 @@ body {
 .nftName {
   font-size: 24px;
   font-weight: bolder;
+  color: #7e7777;
 }
 
 .price {
   font-size: 22px;
   font-weight: bold;
+  color: #7e7777;
 }
 
 .slide-container {
@@ -217,7 +219,7 @@ body {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-color: rgb(178, 78, 78);
+  background-color: rgb(0, 0, 0);
 }
 
 .image-slider {
@@ -274,6 +276,34 @@ body {
   background-color: transparent;
 }
 
+#slider-span4:target ~ .image-slider #img4,
+#slider-span4:target ~ .image-slider #button-4 {
+  width: 380px;
+  height: 585px;
+  background-color: transparent;
+}
+
+#slider-span5:target ~ .image-slider #img5,
+#slider-span5:target ~ .image-slider #button-5 {
+  width: 380px;
+  height: 585px;
+  background-color: transparent;
+}
+
+#slider-span6:target ~ .image-slider #img6,
+#slider-span6:target ~ .image-slider #button-6 {
+  width: 380px;
+  height: 585px;
+  background-color: transparent;
+}
+
+#slider-span7:target ~ .image-slider #img7,
+#slider-span7:target ~ .image-slider #button-7 {
+  width: 380px;
+  height: 585px;
+  background-color: transparent;
+}
+
 #slider-span1:target ~ .image-slider {
   left: 20%;
 }
@@ -283,5 +313,9 @@ body {
 }
 
 #slider-span3:target ~ .image-slider {
+  left: -20%;
+}
+
+#slider-span5:target ~ .image-slider {
   left: -20%;
 }/*# sourceMappingURL=Style.css.map */
