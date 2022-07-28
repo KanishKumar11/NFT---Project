@@ -72,7 +72,7 @@ body {
 
 .front {
   height: 90vh;
-  margin: 15rem 20rem;
+  margin: 7rem 15rem;
   padding: 5px;
 }
 .front .fleft {
@@ -84,10 +84,10 @@ body {
 .front .fright {
   width: 40%;
   float: right;
+  position: relative;
 }
 .front .fright video {
   height: 500px;
-  margin-top: -100px;
 }
 
 .type {
