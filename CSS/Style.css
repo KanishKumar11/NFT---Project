@@ -350,13 +350,89 @@ body, html {
 
 .faq {
   height: 100vh;
-  width: 100vw;
-  background-color: #ffffff;
+  width: 100%;
+  background-color: #3c4053;
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faq h2 {
+  font-size: 60px;
+  text-align: center;
+  color: #e7d5ff;
+  margin: 100px;
+}
+.faq .faqContainer {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.faq .ques .ques-item {
+  background-color: #283042;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+}
+.faq .ques .ques-item .ques-link {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: #283042;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.faq .ques .ques-item .ques-link img {
+  color: #e7d5ff;
+}
+.faq .ques .ques-item .ques-link .remove {
+  display: none;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #212838;
+  transition: max-height 650ms;
+}
+.answer p {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 2rem;
+}
+
+.answer::before {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  height: 90%;
+  background-color: #8fc460;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.ques-item:target .answer {
+  max-height: 20rem;
+}
+
+.ques-item:target .ques-link .add {
+  display: none;
+}
+
+.ques-item:target .ques-link .remove {
+  display: block;
 }
 
 .container {
   width: 1%;
-  height: 100vh;
+  height: 90vh;
   background-color: black;
   margin-left: 50%;
   display: flex;
@@ -386,6 +462,9 @@ body, html {
   text-align: center;
   background-color: #ffffff;
 }
+.box p {
+  font-size: 1.4rem;
+}
 
 .b1 {
   float: right;
@@ -397,4 +476,13 @@ body, html {
 
 .subtext {
   font-size: 16px !important;
+}
+
+.icon {
+  height: 20px;
+  color: #e7d5ff;
+}
+
+.answer {
+  color: white;
 }/*# sourceMappingURL=Style.css.map */
