@@ -175,6 +175,14 @@ body {
   position: fixed;
   overflow-x: auto;
 }
+.trendSection h2 {
+  position: fixed;
+}
+
+.trendSection .headh2 {
+  position: fixed;
+  display: block;
+}
 
 .trendSection::-webkit-scrollbar {
   width: 10px;
