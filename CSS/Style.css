@@ -512,8 +512,33 @@ body, html {
   background-color: #111;
   border-radius: 50%;
   transform: rotate(30deg);
+  -webkit-animation: blink 0.5s linear infinite;
+          animation: blink 0.5s linear infinite;
 }
 
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .MnavIcon {
   width: 4rem;
   height: 4rem;
@@ -530,7 +555,7 @@ body, html {
   display: none;
 }
 
-@media (max-width: 62em) {
+@media only screen and (max-width: 62em) {
   .MnavBtn {
     display: block;
     z-index: 999;
@@ -583,5 +608,35 @@ body, html {
   .front .fright {
     padding-right: 100px;
     margin-right: 100px;
+  }
+}
+@media only screen and (max-width: 47em) {
+  .front {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    margin: 0;
+  }
+  .front .fright {
+    float: none;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    right: 25%;
+    position: absolute;
+  }
+  .front .fright video {
+    height: 400px;
+    margin-top: -50px;
+    border-radius: 30%;
+  }
+  .front .fleft {
+    float: none;
+    margin-top: 400px;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
   }
 }/*# sourceMappingURL=Style.css.map */
