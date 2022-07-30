@@ -583,8 +583,8 @@ max-height: 20rem;
             position: absolute;
             video{
                 height: 400px;
-                margin-top: -50px;
-                border-radius: 30%;
+                margin-top: -10px;
+                // border-radius: 30%;
             }
         }
         .fleft{
@@ -594,6 +594,40 @@ max-height: 20rem;
             text-align: center;
             // position: absolute;
             bottom: 0;
+        }
+    }
+}
+@media only screen and (max-width:31em) {
+    .front{
+        h1{
+            font-size: 30px;
+            margin-top: 5%;
+        }
+        .fright{
+            align-items: center;
+            align-self: center;
+            justify-content: center;
+            left: 5%;
+            top: 5%;
+            margin-bottom: 5%;
+            video{
+                margin-bottom: 5%;
+            }
+        }
+    }
+}
+@media only screen and (max-width:23.5em){
+    .header{
+        padding: 0 .8rem;
+    }
+    .front{
+        .fright{
+            video{
+                height:300px;
+            }
+        }
+        .fleft{
+            margin-top: 300px;
         }
     }
 }

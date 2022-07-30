@@ -629,8 +629,7 @@ body, html {
   }
   .front .fright video {
     height: 400px;
-    margin-top: -50px;
-    border-radius: 30%;
+    margin-top: -10px;
   }
   .front .fleft {
     float: none;
@@ -638,5 +637,33 @@ body, html {
     width: 100%;
     text-align: center;
     bottom: 0;
+  }
+}
+@media only screen and (max-width: 31em) {
+  .front h1 {
+    font-size: 30px;
+    margin-top: 5%;
+  }
+  .front .fright {
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    left: 5%;
+    top: 5%;
+    margin-bottom: 5%;
+  }
+  .front .fright video {
+    margin-bottom: 5%;
+  }
+}
+@media only screen and (max-width: 23.5em) {
+  .header {
+    padding: 0 0.8rem;
+  }
+  .front .fright video {
+    height: 300px;
+  }
+  .front .fleft {
+    margin-top: 300px;
   }
 }/*# sourceMappingURL=Style.css.map */
