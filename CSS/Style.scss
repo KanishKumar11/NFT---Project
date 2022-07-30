@@ -574,6 +574,10 @@ max-height: 20rem;
 }
 // ----850px
 @media only screen and (max-width:53.5em) {
+    .faq{
+        flex-direction: column;
+        height: 100%;
+    }
     .about{
         height: 175vh;
         display: flex;
