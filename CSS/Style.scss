@@ -100,6 +100,7 @@ body{
 }
 .about{
     height: 100vh;
+    max-height: max-content;
     width: 100vw;
     background-color: #202020;
     display: flex;
@@ -120,7 +121,7 @@ body{
         }
         p{
             font-size: 16px;
-            width: 500px;
+            // width: 500px;
         }
         .grey{
             color: rgb(183, 173, 173);
@@ -508,6 +509,13 @@ max-height: 20rem;
 
 // 980px
 @media only screen and (max-width:62em) {
+    .about{
+    .Aright{
+        h2{
+            font-size: 40px;
+        }
+    }
+}
     .MnavBtn{
         display: block;
         z-index: 999;
@@ -564,7 +572,51 @@ max-height: 20rem;
         }
     }
 }
+// ----850px
+@media only screen and (max-width:53.5em) {
+    .about{
+        height: 175vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+        .Aright{
+            float: none;
+            position: absolute;
+            width: 100%;
+            margin: 50%;
+            height:100%;
+            top: 0;
+            p{
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            h2{
+                margin: 0;
+                margin-left: 50px;
+                font-size: 33px;
+            }
+        }
+        .Aleft{
+            float: none;
+            position: absolute;
+            // width: 100%;
+            margin-bottom: 50%;
+            top: 0;
+            
+        }
+    }
+}
+// ----752px
 @media only screen and (max-width:47em) {
+    .about{
+        .Aleft{
+            img{
+                height: 250px;
+            }
+        }
+    }
     .front{
         display: flex;
         flex-direction: column;
@@ -597,7 +649,17 @@ max-height: 20rem;
         }
     }
 }
+// ----496px
 @media only screen and (max-width:31em) {
+    .about{
+        height: 215vh;
+        .Aright{
+            margin-top: 300px;
+        }
+        .Aleft{
+            margin-right: 14%;
+        }
+    }
     .front{
         h1{
             font-size: 30px;
