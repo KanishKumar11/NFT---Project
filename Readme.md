@@ -7,5 +7,5 @@ Email: kanishkumar@my.com
 
 Details of Participant 2:
 Name: Arshdeep Singh
-Phone No.: ----
-Email: ---
+Phone No.: 9855757833
+Email: balarsh535@gmail.com

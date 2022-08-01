@@ -15,7 +15,7 @@ html {
 }
 
 a {
-  color: aquamarine;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 #footer {
-  background-color: red;
+  background-color: #161313;
   color: white;
   margin-top: auto;
 }
@@ -230,8 +230,13 @@ body {
   height: 100%;
   border-radius: 0px 0px 17px 17px;
   background-color: rgb(204, 165, 241);
+}
+
+#buyBtn {
+  text-decoration: none;
   font-weight: bold;
   font-size: 16px;
+  color: #000000;
 }
 
 .nftName {
@@ -420,7 +425,6 @@ body, html {
   overflow: hidden;
   position: relative;
   background-color: #212838;
-  transition: max-height 650ms;
 }
 .answer p {
   font-size: 1.4rem;
