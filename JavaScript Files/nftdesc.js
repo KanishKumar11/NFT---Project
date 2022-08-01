@@ -81,7 +81,7 @@ var endDate=document.getElementById("lastDate")
 var desccription=document.getElementById("nftDesc")
 var priceInEth=document.getElementById("priceInEth")
 var mainImage=document.getElementById("mainImage")
-var i
+// var i
 console.log(nftFavs.innerText)
 console.log("22")
 let string=localStorage.getItem("hey");
