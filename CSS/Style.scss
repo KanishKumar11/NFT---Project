@@ -58,6 +58,9 @@ body{
     background-color: #161313;
     color: white;
     margin-top: auto;
+    a{
+        color:#8193ee;
+    }
 }
 .nav-link:link,
 .nav-link:visited{
@@ -576,9 +579,17 @@ max-height: 20rem;
     display: none;
 }
 // ----Responsive
-
+@media only screen and (max-width:90em) {
+    .box{
+        max-width: 293px;
+    }
+}
+@media only screen and(max-width:85em) {
+    
+}
 // 980px
 @media only screen and (max-width:62em) {
+
     .about{
         max-height: 100vh;
     .Aright{

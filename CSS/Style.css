@@ -64,6 +64,9 @@ body {
   color: white;
   margin-top: auto;
 }
+#footer a {
+  color: #8193ee;
+}
 
 .nav-link:link,
 .nav-link:visited {
@@ -631,6 +634,11 @@ body, html {
   display: none;
 }
 
+@media only screen and (max-width: 90em) {
+  .box {
+    max-width: 293px;
+  }
+}
 @media only screen and (max-width: 62em) {
   .about {
     max-height: 100vh;
