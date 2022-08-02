@@ -37,7 +37,7 @@ a {
 }
 
 body {
-  font-family: Rimouski, monospace !important;
+  font-family: Poppins, sans-serif;
   background: rgba(255, 255, 255, 0.342);
 }
 
@@ -89,6 +89,7 @@ body {
 
 .front {
   height: 80vh;
+  font-family: Rimouski, monospace !important;
   margin: 7rem 15rem;
   padding: 5px;
 }
@@ -535,7 +536,7 @@ body, html {
   border: 2px solid black;
   background: #e7d5ff;
   max-width: 300px;
-  min-height: 350px;
+  min-height: 400px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;

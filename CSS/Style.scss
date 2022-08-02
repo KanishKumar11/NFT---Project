@@ -34,7 +34,7 @@ a{
     box-sizing: border-box;
 }
 body{
-    font-family: Rimouski,monospace !important;
+    font-family: Poppins, sans-serif;
     background: rgba(255, 255, 255, 0.342);
 }
 .header{
@@ -80,6 +80,7 @@ body{
 }
 .front{
     height: 80vh;
+    font-family: Rimouski,monospace !important;
     margin: 7rem 15rem;
     padding: 5px;
     .fleft{
@@ -503,7 +504,7 @@ max-height: 20rem;
     border: 2px solid black;
     background:#e7d5ff;
     max-width: 300px;
-    min-height: 350px;
+    min-height: 400px;
     height: fit-content;
     border-radius:50px 0 50px 0;
     margin: 30px !important;
