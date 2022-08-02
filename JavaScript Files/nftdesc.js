@@ -8,13 +8,14 @@ function SaveBtn(){
     }
 };
 
+
 let nft1={
     name:"Frenchie",
     owner:"Butcher",
     priceInDollars:"$3999",
     priceInEth:"0.002 Eth",
     salesEnd:"August 10,2022",
-    desc:"NFT DESC",
+    desc:"This is one of our unique and best NFT in our collection. Frenchie ,owned by Buther has 3 favourites and the sales ends by august 10,2022 ",
     favourits:"3 ",
     source: "/Assets/graphics/1.svg"
 }
@@ -24,7 +25,7 @@ let nft2={
     priceInDollars:"$4885",
     priceInEth:"0.004 Eth",
     salesEnd:"August 9,2022",
-    desc:"NFT DESC 2",
+    desc:"This is one of our unique and best NFT in our collection. Hughie ,owned by MonCouir has 5 favourites and the sales ends by august 5,2022 ",
     favourits:"5 ",
     source: "/Assets/graphics/2.svg"
 }
@@ -34,7 +35,7 @@ let nft3={
     priceInDollars:"$3970",
     priceInEth:"0.008 Eth",
     salesEnd:"August 15,2022",
-    desc:"this is first nft and this is itrs decsription check it out ucan also change it by chngung the text i nftjs file",
+    desc:"This is one of our unique and best NFT in our collection. Gorr ,owned by Steve M has 2 favourites and the sales ends by august 15,2022 ",
     favourits:"2 ",
     source: "/Assets/graphics/3.svg"
 }
@@ -44,17 +45,17 @@ let nft4={
     priceInDollars:"$3550",
     priceInEth:"0.040 Eth",
     salesEnd:"August 14,2022",
-    desc:"this is first nft and this is itrs decsription check it out ucan also change it by chngung the text i nftjs file",
+    desc:"This is one of our unique and best NFT in our collection. Marret ,owned by Stannie has 6 favourites and the sales ends by august 14,2022 ",
     favourits:"6 ",
     source: "/Assets/graphics/4.svg"
 }
 let nft5={
-    name:"Suggest",
-    owner:"Dontno",
+    name:"Sugrest",
+    owner:"Donno",
     priceInDollars:"$5530",
     priceInEth:"0.05 Eth",
     salesEnd:"August 20,2022",
-    desc:"this is first nft and this is itrs decsription check it out ucan also change it by chngung the text i nftjs file",
+    desc:"This is one of our unique and best NFT in our collection. Sugrest ,owned by Donno has 4 favourites and the sales ends by august 20,2022 ",
     favourits:"4 ",
     source: "/Assets/graphics/5.svg"
 }
@@ -80,7 +81,7 @@ let r=(string.indexOf(nft1.source)>0)
 console.log(r)
 checkSrc(string)
 function checkSrc(source){
-    mainImage.src=".."+source.substr(21,23)
+    mainImage.src=source
     if(source.indexOf(nft1.source)>0){
         ownerName.innerText="Owner :"+nft1.owner
         nftName.innerText=nft1.name
@@ -128,7 +129,8 @@ function checkSrc(source){
     }
 }
 function ButtonClicked(otherImage){
-    mainImage.src=".."+otherImage.src.substr(21,23)
+    // mainImage.src=".."+otherImage.src.substr(21,23)
+    mainImage.src=otherImage.src
     console.log("."+otherImage.src.substr(21,23))
     console.log(otherImage.src)
     

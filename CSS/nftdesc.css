@@ -323,6 +323,80 @@ button{
       align-items: center;
       justify-content: space-evenly;
   }
+  .descBox { height: 100%; width: 100%; }
+  .Images{
+    align-items: center;
+  }
+  .imageText{
+    font-size: 26px;
+    margin-top: 3%;
+
+  }
+  .otherImages{
+
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 100%;
+  }
+  .textPart{
+    width: 100%;
+  }
+  .owner{
+    font-size: 34px;
+
+  }
+  .priceText{
+    font-size: 41px;
+  }
+  .price{
+    padding-right: 9px;
+    font-size: 52px;
+  }
+  .priceText2{
+    font-size: 44px
+  }
+  .ratings{
+    font-size: 32px;
+  }
+  .salesEnd{
+    font-size: 49px;
+  }
+  .name{
+    font-size: 56px;
+  }
+  #footer{
+    font-size: 18px;
+    bottom: 0%;
+  }
+  .buyNow, .saveButton{
+    width: 289px;
+    height: 67px;
+    font-size: 41px;
+  }
+  .descText{
+    font-size: 38px;
+  }
+  }
+/* @media only screen and (max-width: 320px){ 
+    .fullPage{
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      /* box-sizing: border-box; */
+  /* } 
+  .descContainer{
+      width: 100%;
+  }
+  .descWrapper{
+      width: 95%;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+  }
   .descBox { height: 100%; }
   .Images{
     align-items: center;
@@ -336,10 +410,16 @@ button{
     width: 100%;
   }
   .owner{
-    font-size: 34px;
+    font-size: 40px;
 
+  }
+  .ratings{
+    font-size: 32px;
   }
   .name{
     font-size: 56px;
   }
-  }
+  #footer{
+    bottom: 0%;
+  } 
+   } */

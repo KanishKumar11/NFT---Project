@@ -23,8 +23,11 @@ html {
 }
 
 a {
-  color: rgb(0, 0, 0);
   text-decoration: none;
+}
+
+.colorA {
+  color: rgb(231, 194, 15);
 }
 
 * {
@@ -34,7 +37,7 @@ a {
 }
 
 body {
-  font-family: Poppins, sans-serif;
+  font-family: Rimouski, monospace !important;
   background: rgba(255, 255, 255, 0.342);
 }
 
@@ -223,10 +226,6 @@ body {
 
 .card1 {
   margin-left: 500px;
-}
-
-.card10 {
-  margin-right: 500px;
 }
 
 .buyButton {
@@ -536,7 +535,7 @@ body, html {
   border: 2px solid black;
   background: #e7d5ff;
   max-width: 300px;
-  min-height: 400px;
+  min-height: 350px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
