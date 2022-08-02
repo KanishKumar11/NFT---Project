@@ -3,6 +3,14 @@
   font-family: Poppins;
   src: url(../Assets/Fonts/Poppins/Poppins-Regular.ttf);
 }
+@font-face {
+  font-family: Leckerli;
+  src: url(../Assets/Fonts/Leckerli/LeckerliOne-Regular.ttf);
+}
+@font-face {
+  font-family: Rimouski;
+  src: url(../Assets/Fonts/Rimouski/rimouski.otf);
+}
 :root {
   --primary-color: #212121;
   --background-color: #111;
@@ -174,6 +182,7 @@ body {
   flex-direction: row;
   position: fixed;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 .trendSection h2 {
   position: fixed;
@@ -198,7 +207,7 @@ body {
 }
 
 .nftCard {
-  min-width: 325px;
+  min-width: 335px;
   background-color: #ffffff;
   margin-right: 15px;
   margin-top: 10px;
@@ -239,16 +248,20 @@ body {
   color: #000000;
 }
 
-.nftName {
-  font-size: 24px;
-  font-weight: bolder;
-  color: #7e7777;
-}
-
-.price {
-  font-size: 22px;
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
   font-weight: bold;
-  color: #7e7777;
+}
+.details p {
+  font-family: Rimouski, monospace;
+  color: #e7d5ff;
+  background-color: #000000;
+  padding: 2px;
+  margin: 15px;
 }
 
 .slide-container {
@@ -268,10 +281,11 @@ body {
 }
 
 .image-slider {
-  width: 100%;
+  width: auto;
   height: 600px;
   position: absolute;
-  left: 300px;
+  left: 100px;
+  left: -300px;
   margin-right: 300px;
   display: flex;
   justify-content: center;
@@ -296,7 +310,7 @@ body {
 .button {
   position: absolute;
   width: 240px;
-  height: 370px;
+  height: 280px;
   transition: 0.5s;
   background-color: rgba(91, 91, 208, 0);
 }
@@ -304,49 +318,70 @@ body {
 #slider-span1:target ~ .image-slider #img1,
 #slider-span1:target ~ .image-slider #button-1 {
   width: 380px;
-  height: 585px;
+  height: 385px;
   background-color: transparent;
 }
 
 #slider-span2:target ~ .image-slider #img2,
 #slider-span2:target ~ .image-slider #button-2 {
   width: 380px;
-  height: 585px;
+  height: 385px;
   background-color: transparent;
 }
 
 #slider-span3:target ~ .image-slider #img3,
 #slider-span3:target ~ .image-slider #button-3 {
   width: 380px;
-  height: 585px;
+  height: 385px;
   background-color: transparent;
 }
 
 #slider-span4:target ~ .image-slider #img4,
 #slider-span4:target ~ .image-slider #button-4 {
   width: 380px;
-  height: 585px;
+  height: 385px;
   background-color: transparent;
 }
 
 #slider-span5:target ~ .image-slider #img5,
 #slider-span5:target ~ .image-slider #button-5 {
   width: 380px;
-  height: 585px;
+  height: 385px;
   background-color: transparent;
 }
 
 #slider-span6:target ~ .image-slider #img6,
 #slider-span6:target ~ .image-slider #button-6 {
   width: 380px;
-  height: 585px;
+  height: 385px;
   background-color: transparent;
 }
 
 #slider-span7:target ~ .image-slider #img7,
 #slider-span7:target ~ .image-slider #button-7 {
   width: 380px;
-  height: 585px;
+  height: 385px;
+  background-color: transparent;
+}
+
+#slider-span8:target ~ .image-slider #img8,
+#slider-span8:target ~ .image-slider #button-8 {
+  width: 380px;
+  height: 385px;
+  background-color: transparent;
+}
+
+#slider-span9:target ~ .image-slider #img9,
+#slider-span9:target ~ .image-slider #button-9 {
+  width: 380px;
+  height: 385px;
+  background-color: transparent;
+}
+
+#slider-span10:target ~ .image-slider #img10,
+#slider-span10:target ~ .image-slider #button-10 {
+  width: 380px;
+  height: 385px;
   background-color: transparent;
 }
 
@@ -362,7 +397,31 @@ body {
   left: -20%;
 }
 
+#slider-span4:target ~ .image-slider {
+  left: 0;
+}
+
 #slider-span5:target ~ .image-slider {
+  left: 10%;
+}
+
+#slider-span6:target ~ .image-slider {
+  left: 5%;
+}
+
+#slider-span7:target ~ .image-slider {
+  left: 0;
+}
+
+#slider-span8:target ~ .image-slider {
+  left: -5%;
+}
+
+#slider-span9:target ~ .image-slider {
+  left: -10%;
+}
+
+#slider-span10:target ~ .image-slider {
   left: -20%;
 }
 
@@ -375,8 +434,7 @@ body, html {
   height: 100vh;
   width: 100%;
   background-color: #3c4053;
-  margin: 100px auto;
-  margin-bottom: 0;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -472,7 +530,7 @@ body, html {
   position: relative;
   display: block;
   border: 2px solid black;
-  background: #eeedde;
+  background: #e7d5ff;
   max-width: 300px;
   min-height: 400px;
   height: -webkit-fit-content;
@@ -570,6 +628,9 @@ body, html {
 }
 
 @media only screen and (max-width: 62em) {
+  .about {
+    max-height: 100vh;
+  }
   .about .Aright h2 {
     font-size: 40px;
   }
@@ -633,7 +694,7 @@ body, html {
     height: 100%;
   }
   .about {
-    height: 175vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,7 +1,3 @@
-
-// function buyBtn(clickedBtn){
-//     console.log(clickedBtn)
-// }
 function SaveBtn(){
     let btn=document.getElementById("saveBtn");
     if(btn.style.backgroundColor="#1b4e4e"){
@@ -10,13 +6,7 @@ function SaveBtn(){
     if(btn.style.backgroundColor="#068f8f"){
         btn.style.backgroundColor="#1b4e4e";
     }
-    // btn.addEventListener("click",(e)=>{
-    //     if(btn.style.backgroundColor="#068f8f"){
-    //         btn.style.backgroundColor="#1b4e4e";
-    //     }
-    // })
-   
-}
+};
 
 let nft1={
     name:"Frenchie",
@@ -24,9 +14,9 @@ let nft1={
     priceInDollars:"$3999",
     priceInEth:"0.002 Eth",
     salesEnd:"August 10,2022",
-    desc:"this is first nft and this is itrs decsription check it out ucan also change it by chngung the text i nftjs file",
+    desc:"NFT DESC",
     favourits:"3 ",
-    source: "./Assets/graphics/1.svg"
+    source: "/Assets/graphics/1.svg"
 }
 let nft2={
     name:"Hughie",
@@ -34,9 +24,9 @@ let nft2={
     priceInDollars:"$4885",
     priceInEth:"0.004 Eth",
     salesEnd:"August 9,2022",
-    desc:"this is first nft and this is itrs decsription check it out ucan also change it by chngung the text i nftjs file",
+    desc:"NFT DESC 2",
     favourits:"5 ",
-    source: "./Assets/graphics/2.svg"
+    source: "/Assets/graphics/2.svg"
 }
 let nft3={
     name:"Gorr",
