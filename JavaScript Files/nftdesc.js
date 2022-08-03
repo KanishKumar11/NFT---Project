@@ -59,6 +59,56 @@ let nft5={
     favourits:"4 ",
     source: "/Assets/graphics/5.svg"
 }
+let nft6={
+    name:"OverTurf",
+    owner:"Figgie",
+    priceInDollars:"$5730",
+    priceInEth:"0.06 Eth",
+    salesEnd:"August 21,2022",
+    desc:"This is one of our unique and best NFT in our collection. OverTurf ,owned by Figgie has 4 favourites and the sales ends by august 21,2022 ",
+    favourits:"4 ",
+    source: "/Assets/graphics/6.svg"
+}
+let nft7={
+    name:"ClutterBuck",
+    owner:"Squids",
+    priceInDollars:"$3530",
+    priceInEth:"0.027 Eth",
+    salesEnd:"August 15,2022",
+    desc:"This is one of our unique and best NFT in our collection. ClutterBuck ,owned by Squids has 7 favourites and the sales ends by august 15,2022 ",
+    favourits:"7 ",
+    source: "/Assets/graphics/7.svg"
+}
+let nft8={
+    name:"Elphonso",
+    owner:"Mergatroid",
+    priceInDollars:"$5536",
+    priceInEth:"0.046 Eth",
+    salesEnd:"August 10,2022",
+    desc:"This is one of our unique and best NFT in our collection. Elphonso ,owned by Mergatroid has 8 favourites and the sales ends by august 10,2022 ",
+    favourits:"8 ",
+    source: "/Assets/graphics/8.svg"
+}
+let nft9={
+    name:"SoupCan",
+    owner:"Oxhandler",
+    priceInDollars:"$2530",
+    priceInEth:"0.015 Eth",
+    salesEnd:"August 13,2022",
+    desc:"This is one of our unique and best NFT in our collection. SoupCan ,owned by Oxhandler has 4 favourites and the sales ends by august 13,2022 ",
+    favourits:"4 ",
+    source: "/Assets/graphics/9.svg"
+}
+let nft10={
+    name:"Jefferson",
+    owner:"Snoobik",
+    priceInDollars:"$5630",
+    priceInEth:"0.08 Eth",
+    salesEnd:"August 16,2022",
+    desc:"This is one of our unique and best NFT in our collection. Jefferson ,owned by Snoobik has 4 favourites and the sales ends by august 16,2022 ",
+    favourits:"4 ",
+    source: "/Assets/graphics/10.svg"
+}
 
 
 
@@ -73,11 +123,12 @@ var desccription=document.getElementById("nftDesc")
 var priceInEth=document.getElementById("priceInEth")
 var mainImage=document.getElementById("mainImage")
 // var i
-console.log(nftFavs.innerText)
+// console.log(nftFavs.innerText)
 console.log("22")
 let string=localStorage.getItem("hey");
 console.log(string)
-let r=(string.indexOf(nft1.source)>0)
+localStorage.clear
+let r=string.indexOf(nft1.source)>0
 console.log(r)
 checkSrc(string)
 function checkSrc(source){
@@ -126,6 +177,51 @@ function checkSrc(source){
         endDate.innerText=nft5.salesEnd
         desccription.innerText=nft5.desc
         priceInEth.innerText=nft5.priceInEth
+    }
+    if(source.indexOf(nft6.source)>0){
+        ownerName.innerText="Owner :"+nft6.owner
+        nftName.innerText=nft6.name
+        nftFavs.innerText=nft6.favourits+"favourites"
+        priceInDollars.innerHTML=nft6.priceInDollars
+        endDate.innerText=nft6.salesEnd
+        desccription.innerText=nft6.desc
+        priceInEth.innerText=nft6.priceInEth
+    }
+    if(source.indexOf(nft7.source)>0){
+        ownerName.innerText="Owner :"+nft7.owner
+        nftName.innerText=nft7.name
+        nftFavs.innerText=nft7.favourits+"favourites"
+        priceInDollars.innerHTML=nft7.priceInDollars
+        endDate.innerText=nft7.salesEnd
+        desccription.innerText=nft7.desc
+        priceInEth.innerText=nft7.priceInEth
+    }
+    if(source.indexOf(nft8.source)>0){
+        ownerName.innerText="Owner :"+nft8.owner
+        nftName.innerText=nft8.name
+        nftFavs.innerText=nft8.favourits+"favourites"
+        priceInDollars.innerHTML=nft8.priceInDollars
+        endDate.innerText=nft8.salesEnd
+        desccription.innerText=nft8.desc
+        priceInEth.innerText=nft8.priceInEt7
+    }
+    if(source.indexOf(nft9.source)>0){
+        ownerName.innerText="Owner :"+nft9.owner
+        nftName.innerText=nft9.name
+        nftFavs.innerText=nft9.favourits+"favourites"
+        priceInDollars.innerHTML=nft9.priceInDollars
+        endDate.innerText=nft9.salesEnd
+        desccription.innerText=nft9.desc
+        priceInEth.innerText=nft9.priceInEth
+    }
+    if(source.indexOf(nft10.source)>0){
+        ownerName.innerText="Owner :"+nft10.owner
+        nftName.innerText=nft10.name
+        nftFavs.innerText=nft10.favourits+"favourites"
+        priceInDollars.innerHTML=nft10.priceInDollars
+        endDate.innerText=nft10.salesEnd
+        desccription.innerText=nft10.desc
+        priceInEth.innerText=nft10.priceInEth
     }
 }
 function ButtonClicked(otherImage){
@@ -179,6 +275,51 @@ function ButtonClicked(otherImage){
         endDate.innerText=nft5.salesEnd
         desccription.innerText=nft5.desc
         priceInEth.innerText=nft5.priceInEth
+    }
+    if(otherImage.src.indexOf(nft6.source)>0){
+    ownerName.innerText="Owner :"+nft6.owner
+    nftName.innerText=nft6.name
+    nftFavs.innerText=nft6.favourits+"favourites"
+    priceInDollars.innerHTML=nft6.priceInDollars
+    endDate.innerText=nft6.salesEnd
+        desccription.innerText=nft6.desc
+        priceInEth.innerText=nft6.priceInEth
+    }
+    if(otherImage.src.indexOf(nft7.source)>0){
+        ownerName.innerText="Owner :"+nft7.owner
+        nftName.innerText=nft7.name
+        nftFavs.innerText=nft7.favourits+"favourites"
+        priceInDollars.innerHTML=nft7.priceInDollars
+        endDate.innerText=nft7.salesEnd
+        desccription.innerText=nft7.desc
+        priceInEth.innerText=nft7.priceInEth
+    }
+    if(otherImage.src.indexOf(nft8.source)>0){
+        ownerName.innerText="Owner :"+nft8.owner
+        nftName.innerText=nft8.name
+        nftFavs.innerText=nft8.favourits+"favourites"
+        priceInDollars.innerHTML=nft8.priceInDollars
+        endDate.innerText=nft8.salesEnd
+        desccription.innerText=nft8.desc
+        priceInEth.innerText=nft8.priceInEt7
+    }
+    if(otherImage.src.indexOf(nft9.source)>0){
+        ownerName.innerText="Owner :"+nft9.owner
+        nftName.innerText=nft9.name
+        nftFavs.innerText=nft9.favourits+"favourites"
+        priceInDollars.innerHTML=nft9.priceInDollars
+        endDate.innerText=nft9.salesEnd
+        desccription.innerText=nft9.desc
+        priceInEth.innerText=nft9.priceInEth
+    }
+    if(otherImage.src.indexOf(nft10.source)>0){
+        ownerName.innerText="Owner :"+nft10.owner
+        nftName.innerText=nft10.name
+        nftFavs.innerText=nft10.favourits+"favourites"
+        priceInDollars.innerHTML=nft10.priceInDollars
+        endDate.innerText=nft10.salesEnd
+        desccription.innerText=nft10.desc
+        priceInEth.innerText=nft10.priceInEth
     }
    
 }
